@@ -7,6 +7,9 @@ import { ContactPage } from '../components/ContactPage'
 import { ServicePage } from '../components/ServicesPage'
 import { Footer } from '../components/Footer'
 import { OurSolutionPage } from '../components/OurSolutionPage'
+import { RejoindreMedecin } from '../components/RejoindreMedecin'
+import { RejoindrePharmacie } from '../components/RejoindrePharmacie'
+
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -17,6 +20,9 @@ const AppRouter = () => (
           <Route path="/a-propos" component={AboutPage} />
           <Route path="/services" component={ServicePage} exact={true} />
           <Route path="/notre-solution" component={OurSolutionPage} exact={true} />
+          <Route path="/nous-rejoindre-medecin" component={RejoindreMedecin} />
+          <Route path="/nous-rejoindre-pharmacien" component={RejoindrePharmacie} />
+          <Route path="/contact" component={ContactPage} />
           {/* 
           <Route path="/equipe" component={PortfolioItemPage} />
           <Route path="/vision-et-valeur" component={PortfolioItemPage} />
@@ -27,7 +33,6 @@ const AppRouter = () => (
           <Route path="/carrière-stage" component={PortfolioItemPage} />
           <Route path="/actualite" component={PortfolioItemPage} />
           <Route component={NotFoundPage} /> */}
-          <Route path="/contact" component={ContactPage} />
         </Switch>
         <Footer/>
       </div>

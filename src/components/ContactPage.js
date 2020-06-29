@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from "./ContactForm";
 
 export const ContactPage = () => {
     return (
@@ -42,38 +43,13 @@ export const ContactPage = () => {
                     </div>
 
                     <div className="row mt-5 justify-content-center" data-aos="fade-up">
-                    <div className="col-lg-10">
-                        <form action="#" method="post" role="form" className="php-email-form">
-                            <div className="form-row">
-                                <div className="col-md-6 form-group">
-                                    <input type="text" name="name" className="form-control" id="name" placeholder="Votre nom" data-rule="minlen:3" data-msg="Votre nom doit contenir au moins 3 caractères !" />
-                                    <div className="validate"></div>
-                                </div>
-                                <div className="col-md-6 form-group">
-                                    <input type="email" className="form-control" name="email" id="email" placeholder="Votre adresse mail" data-rule="email" data-msg="Adresse mail invalide" />
-                                    <div className="validate"></div>
-                                </div>
-                            </div>
-                            <div className="form-group">
-                                <input type="text" className="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="L'objet du message doit contenir au moins 4 caractères !" />
-                                <div className="validate"></div>
-                            </div>
-                            <div className="form-group">
-                                <textarea className="form-control" name="message" rows="5" data-rule="required" data-msg="Votre message" placeholder="Message"></textarea>
-                                <div className="validate"></div>
-                            </div>
-                            <div className="mb-3">
-                                <div className="loading">Loading</div>
-                                <div className="error-message"></div>
-                                <div className="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div className="text-center"><button type="submit">Send Message</button></div>
-                        </form>
+                        <div className="col-lg-10">
+                            <ContactForm/>
+                        </div>
                     </div>
-                    </div>
-
                 </div>
             </section>
+            <br/><br/>
         </main>
     )
 }

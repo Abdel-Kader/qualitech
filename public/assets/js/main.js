@@ -50,10 +50,10 @@
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
-      class: 'mobile-nav d-lg-none'
+      className: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" className="mobile-nav-toggle d-lg-none"><i className="icofont-navigation-menu"></i></button>');
+    $('body').prepend('<button type="button" className="mobile-nav-toggle d-lg-none"><i className="icofont-navigation-menu"/></button>');
     $('body').append('<div className="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav-toggle', function(e) {
@@ -99,6 +99,7 @@
     topSpacing: 0,
     zIndex: '50'
   });
+
 
   // Intro carousel
   var heroCarousel = $("#heroCarousel");
@@ -148,6 +149,7 @@
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
+
     });
   });
 
@@ -173,5 +175,6 @@
     duration: 800,
     easing: "ease-in-out"
   });
+
 
 })(jQuery);

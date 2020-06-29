@@ -21,8 +21,15 @@ export const ServicePage = () => {
                                     <a href=""> { teleconsultation.title } </a>
                                 </h4>
                                 <p className="description">
+                                    { teleconsultation.resume }
+                                    <span id="dots">...</span>
+                                </p>
+                                <p className="description" id="more">
                                     { teleconsultation.content }
                                 </p>
+                                <div className="text-center">
+                                        <button id="moreBtn" className="btn btn-primary">Lire plus</button>
+                                    </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
@@ -107,18 +114,7 @@ export const ServicePage = () => {
                                         <p> { qsante.resume }</p>
                                     </a>
                                 </li>
-                                {/* <li className="nav-item mt-2">
-                                    <a className="nav-link" data-toggle="tab" href="#tab-3">
-                                        <h4>Pariatur explicabo vel</h4>
-                                        <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
-                                    </a>
-                                </li>
-                                <li className="nav-item mt-2">
-                                    <a className="nav-link" data-toggle="tab" href="#tab-4">
-                                        <h4>Nostrum qui quasi</h4>
-                                        <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
-                                    </a>
-                                </li> */}
+                                
                             </ul>
                         </div>
                         <div className="col-lg-7 ml-auto" data-aos="fade-left" data-aos-delay="100">
@@ -132,16 +128,7 @@ export const ServicePage = () => {
                                     </figure> */}
                                     <p style={{textAlign:"justify"}}>{ qsante.description }</p>
                                 </div>
-                                <div className="tab-pane" id="tab-3">
-                                    <figure>
-                                        <img src="assets/img/features-3.png" alt="" className="img-fluid"/>
-                                    </figure>
-                                </div>
-                                <div className="tab-pane" id="tab-4">
-                                    <figure>
-                                        <img src="assets/img/features-4.png" alt="" className="img-fluid"/>
-                                    </figure>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
